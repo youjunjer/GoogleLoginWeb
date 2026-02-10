@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Google Login - NMK Style</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <div class="hero glass">
+      <div>
+        <div class="badge">NMKDesk Style UI</div>
+        <h1 class="title">Sign in with Google</h1>
+        <p class="subtitle">
+          Minimal Google OAuth example, styled to match the NMKDesk console.
+          Use this layout as a template for future projects.
+        </p>
+        <div class="cta">
+          <a class="btn" href="/auth/google">Continue with Google</a>
+          <a class="btn secondary" href="https://github.com/youjunjer/GoogleLoginWeb">View Repo</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Quick Start</h3>
+        <div class="code">
+          GOOGLE_CLIENT_ID=...<br />
+          GOOGLE_CLIENT_SECRET=...<br />
+          GOOGLE_OAUTH_REDIRECT_URL=http://localhost:5000/auth/google/callback
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

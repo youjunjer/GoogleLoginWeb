@@ -1,4 +1,4 @@
-from flask import Flask, redirect, url_for
+from flask import Flask, redirect, url_for, render_template
 from authlib.integrations.flask_client import OAuth
 import os
 from dotenv import load_dotenv
@@ -24,7 +24,7 @@ oauth.register(
 
 @app.route('/')
 def home():
-    return '<a href="/auth/google">Continue with Google</a>'
+    return render_template('index.html')
 
 @app.route('/auth/google')
 def google_login():
